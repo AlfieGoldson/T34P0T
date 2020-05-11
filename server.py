@@ -2,7 +2,7 @@ import socket
 import sys
 
 isTeapot = False
-props = ["XD", 'lol']
+props = []
 
 
 def processRequest(request):
@@ -72,7 +72,3 @@ while 1:
     connexion.send(res.encode('UTF-8'))
 
     connexion.close()
-
-    # ch = input("Attendre un autre client ? <R>ecommencer <T>erminer ? ")
-    # if ch.upper() == 'T':
-    #     break
